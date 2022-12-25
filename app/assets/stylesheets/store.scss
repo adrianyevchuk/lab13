@@ -1,0 +1,52 @@
+.store {
+    max-width: 80em;
+    ul.catalog {
+    border-top: solid 0.250em;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+    padding: 1em;
+    margin: 0;
+    border-bottom: solid thin #ddd;
+    // This makes sure our <li> has enough height
+    // to hold the entire image, since it's floated
+    &::after {
+    clear: both;
+    content: " ";
+    display: block;
+    }
+    img {
+    width: 200px;
+    height: 200px;
+    float: left;
+    padding: 1em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    box-shadow: 0.176em 0.176em 0.354em 0px rgba(0,0,0,0.75);
+    }
+    .price {
+    font-size: 1.414em;
+    }
+div.price {
+        display: inline;
+}
+.add{
+background-color: #282;
+border-radius: 10px;
+border: solid thin #141;
+color: white;
+font-size: 0.8em;
+padding: 0.354em 1em;
+}
+.add:hover {
+background-color: #141;
+font-size: 0.9em;
+cursor: pointer;
+box-shadow: 1px 1px 5px 5px #141;
+}
+    }
+    }
+    }
+    
+    
